@@ -7,6 +7,5 @@ Here is some Screenshots of Wordpress visual Text editor:
 
 ![alt tag](http://i.stack.imgur.com/b8nAT.png)
 
-Easy to implemet it. 
 
 Happy coding!!
