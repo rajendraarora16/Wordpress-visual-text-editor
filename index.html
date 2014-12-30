@@ -1,0 +1,370 @@
+
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html xmlns="http://www.w3.org/1999/xhtml" class="ie8 wp-toolbar"  lang="en-US">
+<![endif]-->
+<!--[if !(IE 8) ]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="wp-toolbar"  lang="en-US">
+<!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Wordpress Visual Text Editor..</title>
+<script type="text/javascript">
+var ajaxurl = '',
+	pagenow = 'page',
+	typenow = 'page',
+	adminpage = 'post-new-php',
+	thousandsSeparator = ',',
+	decimalPoint = '.',
+	isRtl = 0;
+</script>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel='stylesheet' href='./css/load_style.css?c=1&amp;dir=ltr&amp;load=dashicons,admin-bar,buttons,media-views,wp-admin,wp-auth-check&amp;ver=4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='open-sans-css'  href='http://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&#038;subset=latin%2Clatin-ext&#038;ver=4.1' type='text/css' media='all' />
+
+<script type='text/javascript'>
+/* <![CDATA[ */
+var userSettings = {"url":"\/wordpress\/","uid":"1","time":"1419912710","secure":""};/* ]]> */
+</script>
+<script type='text/javascript' src='./js/load-script.js?c=0&amp;load%5B%5D=jquery-core,jquery-migrate,utils,plupload,json2&amp;ver=4.1'></script>
+<script type="text/javascript">var _wpColorScheme = {"icons":{"base":"#999","focus":"#2ea2cc","current":"#fff"}};</script>
+<style type="text/css" media="print">#wpadminbar { display:none; }</style>
+</head>
+<body class="wp-admin wp-core-ui no-js  post-new-php auto-fold admin-bar post-type-page branch-4-1 version-4-1 admin-color-fresh locale-en-us no-customize-support no-svg">
+<script type="text/javascript">
+	document.body.className = document.body.className.replace('no-js','js');
+</script>
+
+	<script type="text/javascript">
+		(function() {
+			var request, b = document.body, c = 'className', cs = 'customize-support', rcs = new RegExp('(^|\\s+)(no-)?'+cs+'(\\s+|$)');
+
+			request = true;
+
+			b[c] = b[c].replace( rcs, ' ' );
+			b[c] += ( window.postMessage && request ? ' ' : ' no-' ) + cs;
+		}());
+	</script>
+	
+<div id="wpwrap">
+<a tabindex="1" href="#wpbody-content" class="screen-reader-shortcut">Skip to main content</a>
+		
+<div id="wpbody">
+
+<div id="wpbody-content" aria-label="Main content" tabindex="0">
+		
+<!-- HERE IS MY EDITOR -->		
+		
+
+<form name="post" action="post.php" method="post" id="post">
+<input type="hidden" id="_wpnonce" name="_wpnonce" value="31805f9759" /><input type="hidden" name="_wp_http_referer" value="/wordpress/wp-admin/post-new.php?post_type=page" /><input type="hidden" id="user-id" name="user_ID" value="1" />
+<input type="hidden" id="hiddenaction" name="action" value="editpost" />
+<input type="hidden" id="originalaction" name="originalaction" value="editpost" />
+<input type="hidden" id="post_author" name="post_author" value="1" />
+<input type="hidden" id="post_type" name="post_type" value="page" />
+<input type="hidden" id="original_post_status" name="original_post_status" value="auto-draft" />
+
+<div id="poststuff">
+<div id="post-body" class="metabox-holder columns-2">
+<div id="post-body-content">
+
+<div id="titlediv">
+
+<div id="postdivrich" class="postarea wp-editor-expand">
+
+<div id="wp-content-wrap" class="wp-core-ui wp-editor-wrap tmce-active has-dfw"><link rel='stylesheet' id='editor-buttons-css'  href='./css/editor.min.css?ver=4.1' type='text/css' media='all' />
+<div id="wp-content-editor-tools" class="wp-editor-tools hide-if-no-js"><div id="wp-content-media-buttons" class="wp-media-buttons"><a href="#" id="insert-media-button" class="button insert-media add_media" data-editor="content" title="Add Media"><span class="wp-media-buttons-icon"></span> Add Images</a></div>
+<div class="wp-editor-tabs"><button type="button" id="content-tmce" class="wp-switch-editor switch-tmce" onclick="switchEditors.switchto(this);">Visual</button>
+<button type="button" id="content-html" class="wp-switch-editor switch-html" onclick="switchEditors.switchto(this);">Text</button>
+</div>
+</div>
+<div id="wp-content-editor-container" class="wp-editor-container"><textarea class="wp-editor-area" style="height: 300px" autocomplete="off" cols="40" name="content" id="content"></textarea></div>
+</div>
+
+<table id="post-status-info"><tbody><tr>
+	<td id="wp-word-count">Word count: <span class="word-count">0</span></td>
+	<td id="content-resize-handle" class="hide-if-no-js"><br /></td>
+</tr></tbody></table>
+
+</div>
+</div><!-- /post-body-content -->
+
+<div id="postbox-container-2" class="postbox-container">
+<div id="normal-sortables" class="meta-box-sortables"><div id="postcustom" class="postbox  hide-if-js" >
+<div class="handlediv" title="Click to toggle"><br /></div><h3 class='hndle'><span>Custom Fields</span></h3>
+<div class="inside">
+<div id="postcustomstuff">
+<div id="ajax-response"></div>
+
+<table id="list-table" style="display: none;">
+	<thead>
+	<tr>
+		<th class="left">Name</th>
+		<th>Value</th>
+	</tr>
+	</thead>
+	<tbody id="the-list" data-wp-lists="list:meta">
+	<tr><td></td></tr>
+	</tbody>
+</table><p><strong>Add New Custom Field:</strong></p>
+<table id="newmeta">
+<thead>
+<tr>
+<th class="left"><label for="metakeyinput">Name</label></th>
+<th><label for="metavalue">Value</label></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td id="newmetaleft" class="left">
+<input type="text" id="metakeyinput" name="metakeyinput" value="" />
+</td>
+<td><textarea id="metavalue" name="metavalue" rows="2" cols="25"></textarea></td>
+</tr>
+
+<tr><td colspan="2">
+<div class="submit">
+<input type="submit" name="addmeta" id="newmeta-submit" class="button" value="Add Custom Field" data-wp-lists="add:the-list:newmeta"  /></div>
+<input type="hidden" id="_ajax_nonce-add-meta" name="_ajax_nonce-add-meta" value="acd7455932" /></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="commentstatusdiv" class="postbox  hide-if-js" >
+<div class="handlediv" title="Click to toggle"><br /></div><h3 class='hndle'><span>Discussion</span></h3>
+<div class="inside">
+<input name="advanced_view" type="hidden" value="1" />
+<p class="meta-options">
+	<label for="comment_status" class="selectit"><input name="comment_status" type="checkbox" id="comment_status" value="open"  checked='checked' /> Allow comments.</label><br />
+	<label for="ping_status" class="selectit"><input name="ping_status" type="checkbox" id="ping_status" value="open"  checked='checked' /> Allow <a href="http://codex.wordpress.org/Introduction_to_Blogging#Managing_Comments" target="_blank">trackbacks and pingbacks</a> on this page.</label>
+	</p>
+</div>
+</div>
+<div id="slugdiv" class="postbox  hide-if-js" >
+<div class="handlediv" title="Click to toggle"><br /></div><h3 class='hndle'><span>Slug</span></h3>
+<div class="inside">
+<label class="screen-reader-text" for="post_name">Slug</label><input name="post_name" type="text" size="13" id="post_name" value="" />
+</div>
+</div>
+<div id="authordiv" class="postbox  hide-if-js" >
+<div class="handlediv" title="Click to toggle"><br /></div><h3 class='hndle'><span>Author</span></h3>
+<div class="inside">
+<label class="screen-reader-text" for="post_author_override">Author</label>
+<select name='post_author_override' id='post_author_override' class=''>
+	<option value='1' selected='selected'>rajendraarora16</option>
+</select></div>
+</div>
+</div><div id="advanced-sortables" class="meta-box-sortables"></div></div>
+</div><!-- /post-body -->
+<br class="clear" />
+</div><!-- /poststuff -->
+</form>
+</div>
+
+<!-- HERE IS MY EDITOR END.. -->
+
+
+<script type="text/javascript">
+try{document.post.title.focus();}catch(e){}
+</script>
+
+<div class="clear"></div></div><!-- wpbody-content -->
+<div class="clear"></div></div><!-- wpbody -->
+<div class="clear"></div></div><!-- wpcontent -->
+
+	<!--[if lte IE 8]>
+	<style>
+		.attachment:focus {
+			outline: #1e8cbe solid;
+		}
+		.selected.attachment {
+			outline: #1e8cbe solid;
+		}
+	</style>
+	<![endif]-->
+
+	
+<!-- URL uploader -->
+	<script type="text/html" id="tmpl-uploader-editor">
+		
+	</script>
+<!-- URL uploader END!!!-->
+
+
+<script type='text/javascript'>
+/* <![CDATA[ */
+var autosaveL10n = {"blog_id":"1"};var thickboxL10n = {"next":"Next >","prev":"< Prev","image":"Image","of":"of","close":"Close","noiframes":"This feature requires inline frames. You have iframes disabled or your browser does not support them."};var _wpUtilSettings = {"ajax":{"url":"\/wordpress\/wp-admin\/admin-ajax.php"}};var _wpMediaModelsL10n = {"settings":{"ajaxurl":"\/wordpress\/wp-admin\/admin-ajax.php","post":{"id":0}}};var pluploadL10n = {"queue_limit_exceeded":"You have attempted to queue too many files.","file_exceeds_size_limit":"%s exceeds the maximum upload size for this site.","zero_byte_file":"This file is empty. Please try another.","invalid_filetype":"This file type is not allowed. Please try another.","not_an_image":"This file is not an image. Please try another.","image_memory_exceeded":"Memory exceeded. Please try another smaller file.","image_dimensions_exceeded":"This is larger than the maximum size. Please try another.","default_error":"An error occurred in the upload. Please try again later.","missing_upload_url":"There was a configuration error. Please contact the server administrator.","upload_limit_exceeded":"You may only upload 1 file.","http_error":"HTTP error.","upload_failed":"Upload failed.","big_upload_failed":"Please try uploading this file with the %1$sbrowser uploader%2$s.","big_upload_queued":"%s exceeds the maximum upload size for the multi-file uploader when used in your browser.","io_error":"IO error.","security_error":"Security error.","file_cancelled":"File canceled.","upload_stopped":"Upload stopped.","dismiss":"Dismiss","crunching":"Crunching\u2026","deleted":"moved to the trash.","error_uploading":"\u201c%s\u201d has failed to upload."};
+var _wpPluploadSettings = {"defaults":{"runtimes":"html5,flash,silverlight,html4","file_data_name":"async-upload","url":"\/wordpress\/wp-admin\/async-upload.php","flash_swf_url":"http:\/\/localhost\/wordpress\/wp-includes\/js\/plupload\/plupload.flash.swf","silverlight_xap_url":"http:\/\/localhost\/wordpress\/wp-includes\/js\/plupload\/plupload.silverlight.xap","filters":{"max_file_size":"2097152b"},"multipart_params":{"action":"upload-attachment","_wpnonce":"656c623221"}},"browser":{"mobile":false,"supported":true},"limitExceeded":false};var mejsL10n = {"language":"en-US","strings":{"Close":"Close","Fullscreen":"Fullscreen","Download File":"Download File","Download Video":"Download Video","Play\/Pause":"Play\/Pause","Mute Toggle":"Mute Toggle","None":"None","Turn off Fullscreen":"Turn off Fullscreen","Go Fullscreen":"Go Fullscreen","Unmute":"Unmute","Mute":"Mute","Captions\/Subtitles":"Captions\/Subtitles"}};
+var _wpmejsSettings = {"pluginPath":"\/wordpress\/wp-includes\/js\/mediaelement\/"};var _wpMediaViewsL10n = {"url":"URL","addMedia":"Add Media","search":"Search","select":"Select","cancel":"Cancel","update":"Update","replace":"Replace","remove":"Remove","back":"Back","selected":"%d selected","dragInfo":"Drag and drop to reorder images.","uploadFilesTitle":"Upload Files","uploadImagesTitle":"Upload Images","mediaLibraryTitle":"Media Library","insertMediaTitle":"Insert Media","createNewGallery":"Create a new gallery","createNewPlaylist":"Create a new playlist","createNewVideoPlaylist":"Create a new video playlist","returnToLibrary":"\u2190 Return to library","allMediaItems":"All media items","allDates":"All dates","noItemsFound":"No items found.","insertIntoPost":"Insert into page","unattached":"Unattached","trash":"Trash","uploadedToThisPost":"Uploaded to this page","warnDelete":"You are about to permanently delete this item.\n  'Cancel' to stop, 'OK' to delete.","warnBulkDelete":"You are about to permanently delete these items.\n  'Cancel' to stop, 'OK' to delete.","warnBulkTrash":"You are about to trash these items.\n  'Cancel' to stop, 'OK' to delete.","bulkSelect":"Bulk Select","cancelSelection":"Cancel Selection","trashSelected":"Trash Selected","untrashSelected":"Untrash Selected","deleteSelected":"Delete Selected","deletePermanently":"Delete Permanently","apply":"Apply","filterByDate":"Filter by date","filterByType":"Filter by type","searchMediaLabel":"Search Media","noMedia":"No media attachments found.","attachmentDetails":"Attachment Details","insertFromUrlTitle":"Insert from URL","setFeaturedImageTitle":"Set Featured Image","setFeaturedImage":"Set featured image","createGalleryTitle":"Create Gallery","editGalleryTitle":"Edit Gallery","cancelGalleryTitle":"\u2190 Cancel Gallery","insertGallery":"Insert gallery","updateGallery":"Update gallery","addToGallery":"Add to gallery","addToGalleryTitle":"Add to Gallery","reverseOrder":"Reverse order","imageDetailsTitle":"Image Details","imageReplaceTitle":"Replace Image","imageDetailsCancel":"Cancel Edit","editImage":"Edit Image","chooseImage":"Choose Image","selectAndCrop":"Select and Crop","skipCropping":"Skip Cropping","cropImage":"Crop Image","cropYourImage":"Crop your image","cropping":"Cropping\u2026","suggestedDimensions":"Suggested image dimensions:","cropError":"There has been an error cropping your image.","audioDetailsTitle":"Audio Details","audioReplaceTitle":"Replace Audio","audioAddSourceTitle":"Add Audio Source","audioDetailsCancel":"Cancel Edit","videoDetailsTitle":"Video Details","videoReplaceTitle":"Replace Video","videoAddSourceTitle":"Add Video Source","videoDetailsCancel":"Cancel Edit","videoSelectPosterImageTitle":"Select Poster Image","videoAddTrackTitle":"Add Subtitles","playlistDragInfo":"Drag and drop to reorder tracks.","createPlaylistTitle":"Create Audio Playlist","editPlaylistTitle":"Edit Audio Playlist","cancelPlaylistTitle":"\u2190 Cancel Audio Playlist","insertPlaylist":"Insert audio playlist","updatePlaylist":"Update audio playlist","addToPlaylist":"Add to audio playlist","addToPlaylistTitle":"Add to Audio Playlist","videoPlaylistDragInfo":"Drag and drop to reorder videos.","createVideoPlaylistTitle":"Create Video Playlist","editVideoPlaylistTitle":"Edit Video Playlist","cancelVideoPlaylistTitle":"\u2190 Cancel Video Playlist","insertVideoPlaylist":"Insert video playlist","updateVideoPlaylist":"Update video playlist","addToVideoPlaylist":"Add to video playlist","addToVideoPlaylistTitle":"Add to Video Playlist","settings":{"tabs":[],"tabUrl":"http:\/\/localhost\/wordpress\/wp-admin\/media-upload.php?chromeless=1","mimeTypes":{"image":"Images","audio":"Audio","video":"Video"},"captions":true,"nonce":{"sendToEditor":"8284618e3b"},"post":{"id":3,"nonce":"31805f9759","featuredImageId":-1},"defaultProps":{"link":"file","align":"","size":""},"attachmentCounts":{"audio":0,"video":0},"embedExts":["mp3","ogg","wma","m4a","wav","mp4","m4v","webm","ogv","wmv","flv"],"embedMimes":{"mp3":"audio\/mpeg","ogg":"audio\/ogg","wma":"audio\/x-ms-wma","m4a":"audio\/mpeg","wav":"audio\/wav","mp4":"video\/mp4","m4v":"video\/mp4","webm":"video\/webm","ogv":"video\/ogg","wmv":"video\/x-ms-wmv","flv":"video\/x-flv"},"contentWidth":660,"months":[],"mediaTrash":0}};var imageEditL10n = {"error":"Could not load the preview image. Please reload the page and try again."};var authcheckL10n = {"beforeunload":"Your session has expired. You can log in again from this page or go to the login page.","interval":"180"};var wpPointerL10n = {"dismiss":"Dismiss"};var wordCountL10n = {"type":"w"};var quicktagsL10n = {"closeAllOpenTags":"Close all open tags","closeTags":"close tags","enterURL":"Enter the URL","enterImageURL":"Enter the URL of the image","enterImageDescription":"Enter a description of the image","fullscreen":"fullscreen","toggleFullscreen":"Toggle fullscreen mode","textdirection":"text direction","toggleTextdirection":"Toggle Editor Text Direction","dfw":"Distraction-free writing mode"};var wpLinkL10n = {"title":"Insert\/edit link","update":"Update","save":"Add Link","noTitle":"(no title)","noMatchesFound":"No results found."};/* ]]> */
+</script>
+<script type='text/javascript' src='./js/load-scripts3.js?c=0&amp;load%5B%5D=hoverIntent,common,admin-bar,heartbeat,autosave,suggest,wp-ajax-response,jquery-color,wp-lists,jquery-ui-core,jquery-ui-widget,j&amp;load%5B%5D=query-ui-mouse,jquery-ui-sortable,postbox,post,editor-expand,thickbox,underscore,shortcode,backbone,wp-util,wp-backbone,media-mo&amp;load%5B%5D=dels,wp-plupload,mediaelement,wp-mediaelement,media-views,media-editor,media-audiovideo,wp-playlist,mce-view,imgareaselect,image&amp;load%5B%5D=-edit,svg-painter,wp-auth-check,jquery-ui-position,wp-pointer,word-count,editor,quicktags,wplink,media-upload&amp;ver=4.1'></script>
+		
+		<script type="text/javascript">
+		tinyMCEPreInit = {
+			baseURL: "./js/tinymce",
+			suffix: ".min",
+			dragDropUpload: true,			mceInit: {'content':{theme:"modern",skin:"lightgray",language:"en",formats:{
+						alignleft: [
+							{selector: 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li', styles: {textAlign:'left'}},
+							{selector: 'img,table,dl.wp-caption', classes: 'alignleft'}
+						],
+						aligncenter: [
+							{selector: 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li', styles: {textAlign:'center'}},
+							{selector: 'img,table,dl.wp-caption', classes: 'aligncenter'}
+						],
+						alignright: [
+							{selector: 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li', styles: {textAlign:'right'}},
+							{selector: 'img,table,dl.wp-caption', classes: 'alignright'}
+						],
+						strikethrough: {inline: 'del'}
+					},block_formats:"Paragraph=p;Pre=pre;Heading 1=h1;Heading 2=h2;Heading 3=h3;Heading 4=h4;Heading 5=h5;Heading 6=h6",relative_urls:false,remove_script_host:false,convert_urls:false,browser_spellcheck:true,fix_list_elements:true,entities:"38,amp,60,lt,62,gt",entity_encoding:"raw",keep_styles:false,cache_suffix:"wp-mce-4107-20141130",preview_styles:"font-family font-size font-weight font-style text-decoration text-transform",wpeditimage_disable_captions:false,wpeditimage_html5_captions:true,plugins:"charmap,colorpicker,hr,lists,media,paste,tabfocus,textcolor,fullscreen,wordpress,wpautoresize,wpeditimage,wpgallery,wplink,wpdialogs,wpview",content_css:"./css/dashicons.min.css?ver=4.1,./css/wp-content.css?ver=4.1,//fonts.googleapis.com/css?family=Noto+Sans%3A400italic%2C700italic%2C400%2C700%7CNoto+Serif%3A400italic%2C700italic%2C400%2C700%7CInconsolata%3A400%2C700&subset=latin%2Clatin-ext,./css/editor-style.css,./css/genericons.css",selector:"#content",resize:false,menubar:false,wpautop:true,indent:false,toolbar1:"bold,italic,strikethrough,bullist,numlist,blockquote,hr,alignleft,aligncenter,alignright,link,unlink,wp_more,spellchecker,dfw,wp_adv",toolbar2:"formatselect,underline,alignjustify,forecolor,pastetext,removeformat,charmap,outdent,indent,undo,redo,wp_help",toolbar3:"",toolbar4:"",tabfocus_elements:"content-html,save-post",body_class:"content post-type-page post-status-auto-draft locale-en-us",wp_autoresize_on:true,add_unload_trigger:false}},
+			qtInit: {'content':{id:"content",buttons:"strong,em,link,block,del,ins,img,ul,ol,li,code,more,close,dfw"},'replycontent':{id:"replycontent",buttons:"strong,em,link,block,del,ins,img,ul,ol,li,code,close"}},
+			ref: {plugins:"charmap,colorpicker,hr,lists,media,paste,tabfocus,textcolor,fullscreen,wordpress,wpautoresize,wpeditimage,wpgallery,wplink,wpdialogs,wpview",theme:"modern",language:"en"},
+			load_ext: function(url,lang){var sl=tinymce.ScriptLoader;sl.markDone(url+'/langs/'+lang+'.js');sl.markDone(url+'/langs/'+lang+'_dlg.js');}
+		};
+		</script>
+		<script type='text/javascript' src='./js/tinymce.min.js?ver=4107-20141130'></script>
+<script type='text/javascript' src='./js/plugin.min.js?ver=4107-20141130'></script>
+		<script type="text/javascript">
+		
+		( function() {
+			var init, edId, qtId, firstInit, wrapper;
+
+			if ( typeof tinymce !== 'undefined' ) {
+				for ( edId in tinyMCEPreInit.mceInit ) {
+					if ( firstInit ) {
+						init = tinyMCEPreInit.mceInit[edId] = tinymce.extend( {}, firstInit, tinyMCEPreInit.mceInit[edId] );
+					} else {
+						init = firstInit = tinyMCEPreInit.mceInit[edId];
+					}
+
+					wrapper = tinymce.DOM.select( '#wp-' + edId + '-wrap' )[0];
+
+					if ( ( tinymce.DOM.hasClass( wrapper, 'tmce-active' ) || ! tinyMCEPreInit.qtInit.hasOwnProperty( edId ) ) &&
+						! init.wp_skip_init ) {
+
+						try {
+							tinymce.init( init );
+
+							if ( ! window.wpActiveEditor ) {
+								window.wpActiveEditor = edId;
+							}
+						} catch(e){}
+					}
+				}
+			}
+
+			if ( typeof quicktags !== 'undefined' ) {
+				for ( qtId in tinyMCEPreInit.qtInit ) {
+					try {
+						quicktags( tinyMCEPreInit.qtInit[qtId] );
+
+						if ( ! window.wpActiveEditor ) {
+							window.wpActiveEditor = qtId;
+						}
+					} catch(e){};
+				}
+			}
+
+			if ( typeof jQuery !== 'undefined' ) {
+				jQuery('.wp-editor-wrap').on( 'click.wp-editor', function() {
+					if ( this.id ) {
+						window.wpActiveEditor = this.id.slice( 3, -5 );
+					}
+				});
+			} else {
+				for ( qtId in tinyMCEPreInit.qtInit ) {
+					document.getElementById( 'wp-' + qtId + '-wrap' ).onclick = function() {
+						window.wpActiveEditor = this.id.slice( 3, -5 );
+					}
+				}
+			}
+		}());
+		</script>
+		<div id="wp-link-backdrop" style="display: none"></div>
+		<div id="wp-link-wrap" class="wp-core-ui" style="display: none">
+		<form id="wp-link" tabindex="-1">
+		<input type="hidden" id="_ajax_linking_nonce" name="_ajax_linking_nonce" value="1d85c6dd7f" />		<div id="link-modal-title">
+			Insert/edit link			<button type="button" id="wp-link-close"><span class="screen-reader-text">Close</span></button>
+	 	</div>
+		<div id="link-selector">
+			<div id="link-options">
+				<p class="howto">Enter the destination URL</p>
+				<div>
+					<label><span>URL</span><input id="url-field" type="text" name="href" /></label>
+				</div>
+				<div>
+					<label><span>Title</span><input id="link-title-field" type="text" name="linktitle" /></label>
+				</div>
+				<div class="link-target">
+					<label><span>&nbsp;</span><input type="checkbox" id="link-target-checkbox" /> Open link in a new window/tab</label>
+				</div>
+			</div>
+		</div>
+		<div class="submitbox">
+			<div id="wp-link-cancel">
+				<a class="submitdelete deletion" href="#">Cancel</a>
+			</div>
+			<div id="wp-link-update">
+				<input type="submit" value="Add Link" class="button button-primary" id="wp-link-submit" name="wp-link-submit">
+			</div>
+		</div>
+		</form>
+		</div>
+			<script type="text/javascript">
+	/* <![CDATA[ */
+	var testCompression = {
+		get : function(test) {
+			var x;
+			if ( window.XMLHttpRequest ) {
+				x = new XMLHttpRequest();
+			} else {
+				try{x=new ActiveXObject('Msxml2.XMLHTTP');}catch(e){try{x=new ActiveXObject('Microsoft.XMLHTTP');}catch(e){};}
+			}
+
+			if (x) {
+				x.onreadystatechange = function() {
+					var r, h;
+					if ( x.readyState == 4 ) {
+						r = x.responseText.substr(0, 18);
+						h = x.getResponseHeader('Content-Encoding');
+						testCompression.check(r, h, test);
+					}
+				}
+
+				x.open('GET', ajaxurl + '?action=wp-compression-test&test='+test+'&'+(new Date()).getTime(), true);
+				x.send('');
+			}
+		},
+
+		check : function(r, h, test) {
+			if ( ! r && ! test )
+				this.get(1);
+
+			if ( 1 == test ) {
+				if ( h && ( h.match(/deflate/i) || h.match(/gzip/i) ) )
+					this.get('no');
+				else
+					this.get(2);
+
+				return;
+			}
+
+			if ( 2 == test ) {
+				if ( '"wpCompressionTest' == r )
+					this.get('yes');
+				else
+					this.get('no');
+			}
+		}
+	};
+	testCompression.check();
+	/* ]]> */
+	</script>
+
+<div class="clear"></div></div><!-- wpwrap -->
+<script type="text/javascript">if(typeof wpOnload=='function')wpOnload();</script>
+</body>
+</html>
